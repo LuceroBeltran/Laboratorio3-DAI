@@ -1,0 +1,28 @@
+*{
+    background-color: rgb(23, 231, 238);
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: monospace;
+    text-decoration: underline;
+}
+.formulario{
+    margin: 20px;
+    font-size: 19px;
+    font-family: monospace;
+    text-align: center;
+}
+#val1{
+    width: 30px;
+  
+}
+#val2{
+    width: 30px;
+  
+}
+#coti{
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: rgb(223, 184, 113);
+}

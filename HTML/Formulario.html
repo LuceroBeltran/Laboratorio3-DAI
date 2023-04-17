@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <link href="CSS/Formulario.css" rel="stylesheet"/>
+    <title>Casa de Cambio</title>
+    <script>
+        function cambio(){
+            var valor = parseInt(document.getElementById("num1").value);
+            var resultado = 0;
+
+            var dolar = 3.85;
+            var euro = 3.84;
+            if (document.getElementById("val1").checked){
+                resultado = valor / dolar;
+                alert("Cambio de Soles a Dolares es: $"+ resultado.toFixed(2));
+            }
+            else if (document.getElementById("val2").checked){
+                resultado = valor / euro;
+                alert("Cambio de Soles a Euros es: €"+ resultado.toFixed(2));
+            }
+            else {
+                alert("¡Llenar lo requerido!");
+            }
+
+        }
+            
+    </script>
+</head>
+
+<body>
+    <h3>Casa de Cambio</h3>
+    <form class="formulario">
+        <p>Seleccionar tipo de demoneda a cambiar:</p>
+        <input type="radio" name="eleccion" id="val1">Dolar
+        <input type="radio" name="eleccion" id="val2">Euro
+        <p>Ingrese Monto:</p>
+        <input type="text" id="num1"/>
+        <button type="button" id="coti" onclick="cambio()">Realizar cambio</button>
+    </form>
+</body>
+</html>
